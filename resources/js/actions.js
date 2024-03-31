@@ -1,8 +1,11 @@
-document.getElementById('showResults').addEventListener('click', function() {
-  var values = document.querySelectorAll('.value');
-  values.forEach(function(item) {
-    item.style.display = 'none';
-  });
+const flipper = document.querySelector('.flipper');
+const btn = flipper.querySelector('.bttn');
+const results = flipper.querySelector('.results button');
 
-  document.querySelector('.main-block').style.transform = 'rotateX(360deg)';
+btn.addEventListener('click', () => {
+  flipper.classList.toggle('flip');
+});
+
+results.addEventListener('click', () => {
+  flipper.classList.toggle('flip');
 });
