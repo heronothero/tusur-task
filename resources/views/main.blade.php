@@ -32,9 +32,21 @@
                     </div>
                 </div>
                 <div class="side results">
-                    <b>x1 = </b>
-                    <b>x2 = </b>
-                    <button id="backButton">Назад</button>
+                    <h4 id="title">Решение</h4>
+                    <div class="result-info">
+                        <div class="value-result">
+                            <p><b>D = </b></p>
+                        </div>
+                        <div class="value-result">
+                            <p><b>X<sub>1</sub> = </b></p>
+                        </div>
+                        <div class="value-result">
+                            <p><b>X<sub>2</sub> = </b></p>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button id="backButton" class="bttn">Назад</button>
+                    </div>
                 </div>
             </div>
         </div>
