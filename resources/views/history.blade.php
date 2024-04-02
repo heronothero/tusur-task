@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         @vite(['resources/js/app.js'])
     </head>
-    <body class=main-history>
+    <body class=main>
         <div class="back">
             <a href="/" class="link">Назад</a>
         </div>
@@ -25,166 +25,16 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach ($results as $result)
                     <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>{{ $result->a }}</td>
+                        <td>{{ $result->b }}</td>
+                        <td>{{ $result->c }}</td>
+                        <td>{{ $result->D }}</td>
+                        <td>{{ $result->X1 }}</td>
+                        <td>{{ $result->X2 }}</td>
                     </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

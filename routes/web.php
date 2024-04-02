@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CalculateController;
+use App\Http\Controllers\HistoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('main');
+    $D = null;
+    $X1 = null;
+    $X2 = null;
+    return view('main', compact('D', 'X1', 'X2'));
 });
 
-Route::get('/history', function () {
-    return view('history');
-});
+Route::post('calculate', [CalculateController::class, 'index'])->name('index');
+
+Route::get('/history', [HistoryController::class, 'index'])->name('history.index');
