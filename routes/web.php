@@ -3,7 +3,6 @@
 use App\Http\Controllers\CalculateController;
 use App\Http\Controllers\HistoryController;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
