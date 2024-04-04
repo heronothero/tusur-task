@@ -7,60 +7,60 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# Калькулятор квадратных уравнений
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Проект представляет собой веб-приложение, созданное при помощи фреймворка laravel и которое позволяет решать квадратные уравнения (полного и неполного вида), а также отслеживать историю решений.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Основные функции
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+-   Решение квадратного уравнения вида ax^2 + bx + c = 0;
+-   Отображение дискриминанта (D) и корней уравнения (X1, X2);
+-   Сохранение результатов решений в базе данных для последующего просмотра и анализа;
 
-## Learning Laravel
+## Установка
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. Клонируйте данный репозиторий на локальный компьютер:
+   git clone https://github.com/heronothero/tusur-task.git
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+2. Перейти в каталог проекта:
+   cd tusur-task
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+3. Установить зависимости:
+   composer install
+   или
+   npm install
 
-## Laravel Sponsors
+4. Скопируйте файл .env.example, переименуйте его в .env. Настройте соединение с базой данных, а также создайте ее и выполните миграции в соответствии с существующими файлами:
+   php artisan migrate
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+5. Сгенерируйте ключ приложения:
+   php artisan key:generate
 
-### Premium Partners
+6. По желанию перед запуском локального сервера можно использовать:
+   npm run build
+   Это поможет сократить размер файлов, улучшить производительность приложения и обеспечить безопасность.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+7. Для тестирования и дебагинга используйте команду:
+   npm run dev
 
-## Contributing
+8. Запустите локальный сервер:
+   php artisan serve
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Использование
 
-## Code of Conduct
+1. Введите значения коэффициентов a, b, c в соответствующие поля;
+2. Нажмите кнопку "Найти решение";
+3. Посмотрите результаты решения, отображаемые на экране (возможно, понадобится немного времени, чтобы подгрузилось);
+4. Чтобы посмотреть историю решений, кликните назад и перейдите на страницу "История".
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Технологии
 
-## Security Vulnerabilities
+-   PHP (Laravel);
+-   JavaScript;
+-   HTML;
+-   CSS.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Автор проекта
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+heronothero
+https://github.com/heronothero
